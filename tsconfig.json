@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        // DO NOT EDIT
+        "outDir": "./dist",
+        "target": "es5",
+        "module": "CommonJS",
+        "sourceMap": true,
+        // Set your preferences here for TypeScript
+        "strict": true
+    }
+}

@@ -1,0 +1,35 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome debug",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}/dist",
+            // very important for debugging !
+            "sourceMaps": true,
+            "sourceMapPathOverrides": {
+                "webpack-internal:///dist/src/*": "${workspaceFolder}}/src"
+            }
+        },
+        {
+            "type": "pwa-node-terminal",
+            "request": "launch",
+            "name": "Launch webpack-dev-server",
+            "command": "npm run dev"
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Complete development",
+            "configurations": [
+                "Launch webpack-dev-server",
+                "Launch Chrome debug"
+            ]
+        }
+    ]
+}
