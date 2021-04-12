@@ -1,5 +1,7 @@
 # Pixi.JS TypeScript boilerplate
 
+_Notice: currently broken, see [issue](https://github.com/GuillaumeDesforges/pixijs-typescript-starter/issues/8)_
+
 I had a hard time setting up a development environment, so I decided to share it.
 
 It can be useful to start from there if you want to start developping a game for browsers quickly.
