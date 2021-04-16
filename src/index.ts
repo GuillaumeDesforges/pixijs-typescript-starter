@@ -37,6 +37,24 @@ const main = async () => {
     });
 
     document.body.appendChild(app.view);
+
+    app.ticker.add(update, sprite);
+};
+
+
+var xv = 1;
+var yv = 1;
+
+// Cannot be an arrow function. Arrow functions cannot have a 'this' parameter.
+function update(this: any, delta: number) {
+    if (this.x <= 0 || this.x >= window.innerWidth - this.width) {
+        xv = -xv;
+    }
+    if (this.y <= 0 || this.y >= window.innerHeight - this.height) {
+        yv = -yv;
+    }
+    this.x += xv;
+    this.y += yv;
 };
 
 main();
