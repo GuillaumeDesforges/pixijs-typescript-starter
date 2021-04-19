@@ -37,6 +37,25 @@ const main = async () => {
     });
 
     document.body.appendChild(app.view);
+
+    let context = {
+        velocity: { x: 1, y: 1},
+        sprite
+    };
+
+    app.ticker.add(update, context);
+};
+
+// Cannot be an arrow function. Arrow functions cannot have a 'this' parameter.
+function update(this: any, delta: number) {
+    if (this.sprite.x <= 0 || this.sprite.x >= window.innerWidth - this.sprite.width) {
+        this.velocity.x = -this.velocity.x;
+    }
+    if (this.sprite.y <= 0 || this.sprite.y >= window.innerHeight - this.sprite.height) {
+        this.velocity.y = -this.velocity.y;
+    }
+    this.sprite.x += this.velocity.x;
+    this.sprite.y += this.velocity.y;
 };
 
 main();
