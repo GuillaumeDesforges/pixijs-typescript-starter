@@ -1,4 +1,6 @@
 import * as PIXI from 'pixi.js';
+import { Hello } from './hello';
+import { HelloFolder } from './HelloFolder/helloFolder';
 
 const load = (app: PIXI.Application) => {
     return new Promise((resolve) => {
@@ -44,6 +46,12 @@ const main = async () => {
     };
 
     app.ticker.add(update, context);
+
+    var hello = new Hello();
+    app.stage.addChild(hello);
+
+    var helloFolder = new HelloFolder();
+    app.stage.addChild(helloFolder);
 };
 
 // Cannot be an arrow function. Arrow functions cannot have a 'this' parameter.

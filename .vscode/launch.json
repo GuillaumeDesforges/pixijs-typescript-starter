@@ -10,14 +10,6 @@
             "name": "Launch Chrome debug",
             "url": "http://localhost:3000",
             "webRoot": "${workspaceFolder}/dist",
-            // very important for debugging !
-            "sourceMaps": true,
-            "sourceMapPathOverrides": {
-                "webpack-internal:///dist/src/*": "${workspaceFolder}/src/*",
-                "webpack-internal:///./dist/src/*": "${workspaceFolder}/src/*",
-                "webpack-internal:///dist/node_modules/node_modules/*": "${workspaceFolder}/node_modules/*",
-                "webpack-internal:///./dist/node_modules/node_modules/*": "${workspaceFolder}/node_modules/*"
-            }
         },
         {
             "type": "node-terminal",
