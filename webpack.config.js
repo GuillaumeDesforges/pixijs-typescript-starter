@@ -28,7 +28,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         // This line is VERY important for VS Code debugging to attach properly
         // Tamper with it at your own risks
-        devtoolModuleFilenameTemplate: '../../[resource-path]',
+        devtoolModuleFilenameTemplate: '[absolute-resource-path]',
     },
     plugins: [
         // No need to write a index.html
