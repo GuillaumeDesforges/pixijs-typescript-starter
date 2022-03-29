@@ -3,7 +3,8 @@
     "version": "0.0.1",
     "description": "A boilerplate to start developping a PixiJS game or animation using TypeScript (VS Code & Chrome).",
     "scripts": {
-        "dev": "webpack-dev-server -d"
+        "dev": "webpack-dev-server -d",
+        "build": "webpack"
     },
     "author": "Guillaume DESFORGES <aceus02@gmail.com>",
     "license": "MIT",
