@@ -1,5 +1,9 @@
 # Pixi.JS TypeScript boilerplate
 
+> [!IMPORTANT]
+> This repo has been archived. Please look at this one instead: https://github.com/yordan-kanchelov/pixi-typescript-boilerplate
+> See https://github.com/GuillaumeDesforges/pixijs-typescript-starter/issues/41 for more details.
+
 I had a hard time setting up a development environment, so I decided to share it.
 It can be useful to start from there if you want to start developping a game for browsers quickly.
 This setup is supposed to be used with VS Code, as configuration is provided so that you hava all tools set up.
